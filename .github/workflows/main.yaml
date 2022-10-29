@@ -19,3 +19,7 @@ jobs:
       run: echo "head_ref - ${{ github.head_ref }}, owner - ${{ github.repository_owner }}"
     - name: List runner name 
       run: echo "runner os - ${{ runner.os }}"
+    #- name: Fail on purpose
+      #run: fail()
+    - name: echo my secret
+      run: echo "mySecret is ${{ secrets.mySecret }}"
